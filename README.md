@@ -1,0 +1,2 @@
+# EmbeddinG
+EmbeddinG - in actions
