@@ -1,0 +1,8 @@
+ Word2Vec- continuous bag of words
+Use surrounding words to predict the missing/center word.
+ eg: The cat drinks milk
+
+v(cat) + v(milk) = context
+v(drinks) = Target
+
+
