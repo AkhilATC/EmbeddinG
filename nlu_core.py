@@ -239,6 +239,13 @@ class PreprocessorEmbeddingPrior:
         print(roof_vector)
 
         print("Dimension:", len(roof_vector))
+        # save embeddings
+        torch.save({
+            "embeddings": model.embedding.weight.detach(),
+            "word_to_id": word_to_id,
+            "id_to_word": id_to_word,
+            "embedding_dim": 32
+        }, "custom_embedding_model.pt")
 
 if __name__ == "__main__":
     pep = PreprocessorEmbeddingPrior()
